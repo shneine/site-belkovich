@@ -1,0 +1,215 @@
+.pic{
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    position: relative;
+}
+.square-1{ /* стена */
+    width: 200px;
+    height: 200px;
+    background-color: #7ea762;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.square-2{ /*окно*/
+    width: 90px;
+    height: 90px;
+    background: radial-gradient(circle at 80% 20%, #ffffff 2%, #b5d8ff 25%, #4da9ff 60%, #1f6cdb 100%);
+    border: 4px solid #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 55px;
+    z-index: 1;
+    overflow: hidden;
+}
+.sun{
+    width: 32px;
+    height: 32px;
+    background-color: #ffe600;
+    border-radius: 50%;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    z-index: 1;
+}
+.white-rings{ /* кружевная занавеска вокруг окна */
+    width: 106px;
+    height: 98px;
+    position: absolute;
+    top: 22px;
+    left: 47px;
+    z-index: 1;
+}
+.white-rings::before{ /* верхний ряд кружева */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 90px;
+    height: 8px;
+    background: radial-gradient(circle at 50% 100%, transparent 5px, #ffffff 6px, #ffffff 2px, transparent 9px) 0 0 / 18px 8px repeat-x;
+}
+.white-rings::after{ /* боковые ряды кружева*/
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 106px;
+    height: 90px;
+    background: 
+        radial-gradient(circle at 100% 50%, transparent 5px, #ffffff 6px, #ffffff 8px, transparent 9px) 0 0 / 8px 18px repeat-y,
+        radial-gradient(circle at 0% 50%, transparent 5px, #ffffff 6px, #ffffff 8px, transparent 9px) 100% 0 / 8px 18px repeat-y;
+}
+.table-top{ /* верх стола*/
+    background-color: #8d5200;
+    width: 82px;
+    height: 10px;
+    z-index: 5;
+    position: absolute;
+    bottom: 82px;
+    left: 59px;
+}
+.table-leg-1{ /* стойка ножки */
+    background-color: #8d5200;
+    width: 14px;
+    height: 62px;
+    border-radius: 50%;
+    z-index: 4;
+    position: absolute;
+    bottom: 22px;
+    left: 93px;
+}
+.table-leg-2{ /* основание стола */
+    width: 34px;
+    height: 22px;
+    background-color: #8d5200;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 4;
+    position: absolute;
+    bottom: 4px;
+    left: 83px;
+}
+
+/* Левый стул*/
+.chair-back-1{
+    width: 24px;
+    height: 95px;
+    background-color: transparent;
+    border-right: 5px solid #8d5200;
+    border-radius: 50%;
+    z-index: 4;
+    position: absolute;
+    bottom: 4px;
+    left: 10px;
+}
+.chair-sit-1{
+    width: 26px;
+    height: 7px;
+    background: radial-gradient(circle, #522800 1.5px, #8d5200 1.5px);
+    background-size: 8px 7px;
+    z-index: 4;
+    position: absolute;
+    bottom: 46px;
+    left: 31px;
+}
+.chair-leg-1{
+    width: 5px;
+    height: 44px;
+    background-color: #8d5200;
+    z-index: 4;
+    position: absolute;
+    bottom: 4px;
+    left: 52px;
+}
+
+/* Правый стул */
+.chair-back-2{
+    width: 24px;
+    height: 95px;
+    background-color: transparent;
+    border-left: 5px solid #8d5200;
+    border-radius: 50%;
+    z-index: 4;
+    position: absolute;
+    bottom: 4px;
+    right: 10px;
+}
+.chair-sit-2{
+    width: 26px;
+    height: 7px;
+    background: radial-gradient(circle, #522800 1.5px, #8d5200 1.5px);
+    background-size: 6px 7px;
+    z-index: 4;
+    position: absolute;
+    bottom: 46px;
+    right: 31px;
+}
+.chair-leg-2{
+    width: 5px;
+    height: 44px;
+    background-color: #8d5200;
+    z-index: 4;
+    position: absolute;
+    bottom: 4px;
+    right: 52px;
+}
+
+/* Чайник */
+.teapot-body{ /* Основание */
+    width: 46px;
+    height: 34px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 35%, #ffe3ea 0%, #e81750 60%, #9e032d 100%);
+    position: absolute;
+    bottom: 92px;
+    left: 77px;
+    z-index: 7;
+    transform:
+}
+.teapot-lid{ /* Крышка */
+    width: 28px;
+    height: 14px;
+    border-radius: 28px 28px 0 0;
+    background: radial-gradient(circle at 45% 40%, #ffe3ea 0%, #e81750 70%, #9e032d 100%);
+    position: absolute;
+    bottom: 120px;
+    left: 86px;
+    z-index: 6;
+}
+.teapot-knob{ /* Ручка крышки*/
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #c40a3d;
+    position: absolute;
+    bottom: 132px;
+    left: 96px;
+    z-index: 5;
+}
+.teapot-spout{ /* Носик */
+    width: 16px;
+    height: 8px;
+    background-color: #c40a3d;
+    position: absolute;
+    bottom: 106px;
+    left: 66px;
+    transform: rotate(30deg);
+    border-radius: 2px 0 0 2px;
+    z-index: 6;
+}
+.teapot-handle{ /* Ручка */
+    width: 14px;
+    height: 18px;
+    border: 3px solid #c40a3d;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 100px;
+    left: 118px;
+    z-index: 6;
+}
