@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторные работы | Белькович Никита</title>
+    <title>Лабораторные работы | Сайт Никита</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./pic.css">
     <link rel="stylesheet" href="./flexbox.css">
@@ -11,19 +11,17 @@
 </head>
 <body>
 
-    <!-- Шапка сайта -->
+    <!-- Шапка сайта с оригинальным логотипом -->
     <header>
         <div class="logo">
-            <div class="logo-cosmic">
-                <div class="cosmic-ring-back"></div>
-                <div class="cosmic-planet"></div>
-                <div class="cosmic-ring"></div>
-                <div class="cosmic-star"></div>
+            <div class="logo-art">
+                <div class="figure-1"></div>
+                <div class="figure-2"></div>
+                <div class="figure-3"></div>
+                <div class="figure-4"></div>
+                <div class="figure-5"></div>
             </div>
-            <div class="logo-info">
-                <div class="logo-title">ASTRO<span>COSMOS</span></div>
-                <div class="logo-sub">Белькович Никита • 5130903/40301</div>
-            </div>
+            <div class="logo-text">quaz.</div>
         </div>
 
         <!-- Навигационное меню -->
@@ -38,20 +36,20 @@
     <main>
         <h1>Лабораторные работы</h1>
         <p>
-            В данном разделе представлены все выполненные практические и лабораторные задания по дисциплине «Веб-технологии и верстка» студента группы 5130903/40301 Бельковича Никиты.
+            В данном разделе представлены выполненные лабораторные работы студента группы 5130903/40301 Бельковича Никиты.
         </p>
 
         <!-- Лабораторная работа 1 -->
         <section class="lab-card">
             <div class="lab-header">
                 <div>
-                    <h2>Лабораторная работа №1: Рисунок CSS</h2>
-                    <h3>Композиция «Интерьер комнаты с чайником»</h3>
+                    <h2>Лабораторная работа 1: Рисунок CSS</h2>
+                    <h3>Композиция «Чайная комната»</h3>
                 </div>
-                <a href="teapot.html" target="_blank" class="lab-btn">Открыть отдельно &rarr;</a>
+                <a href="teapot.html" target="_blank" class="lab-btn">Открыть отдельно</a>
             </div>
             <p>
-                Графическая сцена, выполненная исключительно средствами блочной разметки HTML5 и каскадных таблиц стилей CSS3 без применения растровых или векторных изображений. Включает в себя градиентное окно, кружевную занавеску на базе радиальных градиентов, обеденный стол, стулья и стилизованный чайник с паром.
+                Рисунок, выполненный только средствами блочной верстки HTML и CSS стилей (без картинок).
             </p>
             <div class="lab-preview">
                 <div class="pic">
@@ -85,13 +83,13 @@
         <section class="lab-card">
             <div class="lab-header">
                 <div>
-                    <h2>Лабораторная работа №2: Flexbox-ролик</h2>
-                    <h3>Интерактивная анимация «Иду за мечтой»</h3>
+                    <h2>Лабораторная работа 2: Flexbox-ролик</h2>
+                    <h3>Анимация «Иду за мечтой»</h3>
                 </div>
-                <a href="flexbox.html" target="_blank" class="lab-btn">Открыть отдельно &rarr;</a>
+                <a href="flexbox.html" target="_blank" class="lab-btn">Открыть отдельно</a>
             </div>
             <p>
-                Интерактивный анимационный ролик, построенный с применением механизмов CSS Flexible Box Layout (Flexbox) и ключевых кадров <code>@keyframes</code>. Для запуска анимации наведите курсор мыши на блок ниже или кликните по нему.
+                Анимационный ролик, созданный с помощью Flexbox и CSS-анимаций. Для запуска наведите курсор мыши на блок ниже.
             </p>
             <div class="lab-preview">
                 <div class="flex-box">
@@ -120,16 +118,16 @@
         <section class="lab-card">
             <div class="lab-header">
                 <div>
-                    <h2>Лабораторная работа №3: Интерактивный DOM-Тест</h2>
-                    <h3>Тестирующая система: «Молодежный слэнг (Вариант 1)»</h3>
+                    <h2>Лабораторная работа 3: DOM-Тест</h2>
+                    <h3>Тест «Молодежный слэнг (Вариант 1)»</h3>
                 </div>
-                <a href="test.html" target="_blank" class="lab-btn">Открыть тест отдельно &rarr;</a>
+                <a href="test.html" target="_blank" class="lab-btn">Открыть тест отдельно</a>
             </div>
             <p>
-                Интерактивный веб-тест на базе DOM API JavaScript: случайное перемешивание вопросов и вариантов ответов (алгоритм Фишера-Йетса), блокировка ответов во время анимации, последовательный улёт карточек вправо при правильном/неправильном ответе, вывод статистики и аккордеон с пояснениями.
+                Интерактивный тест на чистом JS: случайное перемешивание, последовательный улёт карточек вправо, подсчет результата и пояснения.
             </p>
             
-            <div class="title-block">Вопрос теста</div>
+            <div class="title-block">Вопрос</div>
             <div id="questions-list" class="questions-list"></div>
             <div id="end-message" class="end-message" style="display: none;"></div>
             <div id="dynamic-area" class="dynamic-area">
@@ -140,7 +138,7 @@
 
     <!-- Подвал сайта -->
     <footer>
-        <p>© 2026 СПбПУ Петра Великого • Выполнил работу студент группы 5130903/40301 Белькович Никита</p>
+        <p>2026 Выполнил работу студент группы 5130903/40301 Белькович Никита</p>
     </footer>
 
     <!-- Скрипт для интерактивного теста -->
