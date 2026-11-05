@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторные работы | Сайт Никита</title>
+    <title>Лабораторные работы</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./pic.css">
     <link rel="stylesheet" href="./flexbox.css">
@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <!-- Шапка сайта с оригинальным логотипом -->
+    <!-- Шапка -->
     <header>
         <div class="logo">
             <div class="logo-art">
@@ -24,7 +24,7 @@
             <div class="logo-text">quaz.</div>
         </div>
 
-        <!-- Навигационное меню -->
+        <!-- Меню -->
         <nav>
             <a class="navigation" href="index.html">Главная</a>
             <a class="navigation active" href="labs.html">Лабораторные работы</a>
@@ -35,22 +35,14 @@
     <!-- Основной блок контента с лабораторными работами -->
     <main>
         <h1>Лабораторные работы</h1>
-        <p>
-            В данном разделе представлены выполненные лабораторные работы студента группы 5130903/40301 Бельковича Никиты.
-        </p>
-
         <!-- Лабораторная работа 1 -->
         <section class="lab-card">
             <div class="lab-header">
                 <div>
                     <h2>Лабораторная работа 1: Рисунок CSS</h2>
-                    <h3>Композиция «Чайная комната»</h3>
                 </div>
                 <a href="teapot.html" target="_blank" class="lab-btn">Открыть отдельно</a>
             </div>
-            <p>
-                Рисунок, выполненный только средствами блочной верстки HTML и CSS стилей (без картинок).
-            </p>
             <div class="lab-preview">
                 <div class="pic">
                     <div class="square-1"></div>
@@ -84,13 +76,9 @@
             <div class="lab-header">
                 <div>
                     <h2>Лабораторная работа 2: Flexbox-ролик</h2>
-                    <h3>Анимация «Иду за мечтой»</h3>
                 </div>
                 <a href="flexbox.html" target="_blank" class="lab-btn">Открыть отдельно</a>
             </div>
-            <p>
-                Анимационный ролик, созданный с помощью Flexbox и CSS-анимаций. Для запуска наведите курсор мыши на блок ниже.
-            </p>
             <div class="lab-preview">
                 <div class="flex-box">
                     <div class="text-1">Иду за мечтой</div>
@@ -123,10 +111,6 @@
                 </div>
                 <a href="test.html" target="_blank" class="lab-btn">Открыть тест отдельно</a>
             </div>
-            <p>
-                Интерактивный тест на чистом JS: случайное перемешивание, последовательный улёт карточек вправо, подсчет результата и пояснения.
-            </p>
-            
             <div class="title-block">Вопрос</div>
             <div id="questions-list" class="questions-list"></div>
             <div id="end-message" class="end-message" style="display: none;"></div>
@@ -141,7 +125,7 @@
         <p>2026 Выполнил работу студент группы 5130903/40301 Белькович Никита</p>
     </footer>
 
-    <!-- Скрипт для интерактивного теста -->
+    <!-- Скрипт для теста -->
     <script src="test.js"></script>
 </body>
 </html>

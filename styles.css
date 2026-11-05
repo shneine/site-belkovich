@@ -1,5 +1,7 @@
-/* Точечный шрифт с поддержкой кириллицы (DotGothic16 / Pixelify Sans) */
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Pixelify+Sans:wght@400;600;700&display=swap');
+@font-face {
+    font-family: 'Modula';
+    src: url('fonts/modula.ttf');
+}
 
 *{
     margin: 0;
@@ -8,7 +10,8 @@
 }
 
 body{
-    font-family: 'DotGothic16', 'Pixelify Sans', 'TT Octas', monospace, sans-serif;
+    font-family: 'Modula', sans-serif;
+    font-size: 20px;
     background-color: #a5b0b0;
     color: #000000;
     min-height: 100vh;
@@ -31,7 +34,7 @@ header{
     align-items: center;
     gap: 10px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
     color: #000000;
 }

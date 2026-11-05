@@ -60,7 +60,7 @@
     color: #b91c1c; /* Красный крестик */
 }
 
-/* Блок пояснения правильного ответа при клике в конце */
+/* Блок пояснения правильного ответа */
 .question-explanation-box {
     background-color: #ffffff;
     border-left: 4px solid #15803d;
@@ -75,7 +75,7 @@
     line-height: 1.4;
 }
 
-/* Блок завершения: "Вопросы закончились" + статистика */
+/* "Вопросы закончились" + статистика */
 .end-message {
     background-color: #ffffff;
     border: 2px solid #768093;
@@ -138,7 +138,7 @@
     text-align: center;
     user-select: none;
 
-    /* Плавное перемещение средствами CSS */
+    /* Плавное перемещение */
     transition: 
         transform 0.6s ease,
         opacity 0.6s ease,
@@ -150,7 +150,7 @@
 .answer-block:hover {
     border-width: 4px;
     border-color: #000000;
-    padding: 10px 12px; /* компенсация толщины рамки, чтобы текст не прыгал */
+    padding: 10px 12px;
 }
 
 .answer-block:active {
