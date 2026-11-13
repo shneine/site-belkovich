@@ -1,0 +1,250 @@
+/* Стили для Лабораторной работы 4: Задание "Слова" (Вариант 2) */
+
+.words-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+    font-family: inherit;
+}
+
+/* Верхний синий блок (Блок 3) */
+.block-3-container {
+    position: relative;
+    border: 3px solid #0000ff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    min-height: 150px;
+    padding: 30px 15px 15px 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 255, 0.1);
+}
+
+.block-3-container.drag-over {
+    background-color: #eff6ff;
+    border-color: #1d4ed8;
+}
+
+/* Бейджи номеров блоков */
+.block-badge {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 4px;
+    user-select: none;
+    z-index: 5;
+}
+
+.badge-blue {
+    background-color: #0000ff;
+    color: #ffffff;
+}
+
+.badge-gray {
+    background-color: #768093;
+    color: #ffffff;
+}
+
+.badge-red {
+    background-color: #dc2626;
+    color: #ffffff;
+}
+
+/* Нижняя область: Блок 2 слева, панель управления и Блок 1 справа */
+.bottom-panels {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .bottom-panels {
+        flex-direction: column;
+    }
+}
+
+/* Левый блок (Блок 2) */
+.block-2-container {
+    position: relative;
+    width: 250px;
+    min-width: 230px;
+    min-height: 420px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 35px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.block-2-container.drag-over {
+    background-color: #f1f5f9;
+    border-color: #3b82f6;
+}
+
+/* Правая колонка */
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Панель ввода */
+.control-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input-string {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px 14px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 2px solid #768093;
+    border-radius: 4px;
+    background-color: #b0a8a8;
+    color: #000000;
+    font-weight: 500;
+}
+
+.btn-action {
+    padding: 10px 20px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #555555;
+    border-radius: 4px;
+    background-color: #c4c4c4;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.15s, transform 0.1s;
+    user-select: none;
+}
+
+.btn-action:hover {
+    background-color: #a8a8a8;
+}
+
+.btn-action:active {
+    transform: scale(0.97);
+}
+
+.btn-secondary {
+    background-color: #e5e7eb;
+    font-size: 14px;
+    padding: 8px 14px;
+}
+
+/* Красный блок (Блок 1) */
+.block-1-container {
+    position: relative;
+    border: 3px solid #ff0000;
+    border-radius: 4px;
+    background-color: #ffffff;
+    min-height: 90px;
+    padding: 28px 15px 15px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.block-1-empty {
+    color: #9ca3af;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* Прямоугольные элементы со словами */
+.word-card {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+    cursor: grab;
+    user-select: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease, box-shadow 0.15s ease, background-color 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+}
+
+.word-card:active {
+    cursor: grabbing;
+}
+
+/* В блоке 2 карточки идут списком на всю ширину */
+.block-2-container .word-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.block-2-container .word-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* В блоке 3 карточки свободного позиционирования */
+.block-3-container .word-card {
+    position: absolute;
+    cursor: pointer;
+    background-color: #c4c4c4 !important; /* Одинаковый цвет для всех в блоке 3 */
+    color: #000000;
+}
+
+.block-3-container .word-card:hover {
+    box-shadow: 0 0 0 2px #0000ff;
+    transform: scale(1.03);
+}
+
+/* При перетаскивании */
+.word-card.dragging {
+    opacity: 0.5;
+    transform: scale(0.95);
+}
+
+/* Подсказки и инструкция */
+.info-box {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.5;
+    background-color: #f8fafc;
+    border-left: 4px solid #768093;
+    padding: 10px 14px;
+    border-radius: 0 4px 4px 0;
+}
+
+.info-box strong {
+    color: #000000;
+}
+
+/* Элементы слов в блоке 1 */
+.clicked-word {
+    display: inline-block;
+    margin-right: 8px;
+    animation: popIn 0.2s ease;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}

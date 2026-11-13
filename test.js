@@ -62,6 +62,7 @@ function shuffle(array) {
     return copy;
 }
 
+
 // Элементы страницы
 const questionsList = document.getElementById('questions-list');
 const dynamicArea = document.getElementById('dynamic-area');
@@ -119,6 +120,7 @@ function showNextQuestion() {
     answersContainer.innerHTML = '';
     const shuffledAnswers = shuffle(qData.answers);
 
+    console.log(shuffledAnswers);
     shuffledAnswers.forEach((ans) => {
         const block = document.createElement('div');
         block.className = 'answer-block';
@@ -211,6 +213,7 @@ function finishTest() {
         <div class="end-hint">Нажмите на любой вопрос выше, чтобы увидеть правильный ответ</div>
     `;
 
+    
     questionRecords.forEach(record => {
         record.item.classList.add('interactive');
 

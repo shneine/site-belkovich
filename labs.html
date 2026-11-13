@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./pic.css">
     <link rel="stylesheet" href="./flexbox.css">
     <link rel="stylesheet" href="./test.css">
+    <link rel="stylesheet" href="./words.css">
 </head>
 <body>
 
@@ -118,6 +119,50 @@
                 <div id="answers-container" class="answers-container"></div>
             </div>
         </section>
+
+        <!-- Лабораторная работа 4 -->
+        <section class="lab-card">
+            <div class="lab-header">
+                <div>
+                    <h2>Лабораторная работа 4: Задание «Слова»</h2>
+                    <h3>Ассоциативный массив и перемещение элементов (Вариант 2)</h3>
+                </div>
+                <a href="words.html" target="_blank" class="lab-btn">Открыть отдельно</a>
+            </div>
+
+            <div class="words-wrapper">
+                <!-- Блок 3: Синий блок сверху -->
+                <div id="block-3" class="block-3-container">
+                    <span class="block-badge badge-blue">3</span>
+                </div>
+
+                <!-- Нижняя часть: Блок 2 слева, панель управления и Блок 1 справа -->
+                <div class="bottom-panels">
+                    <!-- Блок 2: Левый блок с отсортированными элементами -->
+                    <div id="block-2" class="block-2-container">
+                        <span class="block-badge badge-gray">2</span>
+                    </div>
+
+                    <!-- Правая часть: ввод и Блок 1 -->
+                    <div class="right-panel">
+                        <div class="control-row">
+                            <input type="text" id="input-string" class="input-string" value="лес - бочка - 20 – бык - крик - 3 - Бок" placeholder="Введите слова через тире -">
+                            <button type="button" id="btn-parse" class="btn-action">Разобрать</button>
+                        </div>
+
+                        <!-- Блок 1: Красный блок -->
+                        <div id="block-1" class="block-1-container">
+                            <span class="block-badge badge-red">1</span>
+                            <span class="block-1-empty">Нажмите на слова в синем блоке 3, чтобы они отобразились здесь...</span>
+                        </div>
+
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <button type="button" id="btn-clear-block1" class="btn-action btn-secondary">Очистить блок 1</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Подвал сайта -->
@@ -125,7 +170,8 @@
         <p>2026 Выполнил работу студент группы 5130903/40301 Белькович Никита</p>
     </footer>
 
-    <!-- Скрипт для теста -->
+    <!-- Скрипты -->
     <script src="test.js"></script>
+    <script src="words.js"></script>
 </body>
 </html>
