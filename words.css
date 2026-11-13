@@ -20,11 +20,6 @@
     box-shadow: 0 2px 6px rgba(0, 0, 255, 0.1);
 }
 
-.block-3-container.drag-over {
-    background-color: #eff6ff;
-    border-color: #1d4ed8;
-}
-
 /* Бейджи номеров блоков */
 .block-badge {
     position: absolute;
@@ -43,8 +38,8 @@
     color: #ffffff;
 }
 
-.badge-gray {
-    background-color: #768093;
+.badge-green {
+    background-color: #05b344;
     color: #ffffff;
 }
 
@@ -71,7 +66,7 @@
     width: 250px;
     min-width: 230px;
     min-height: 420px;
-    border: 2px solid #000000;
+    border: 2px solid #05b344;
     border-radius: 6px;
     background-color: #ffffff;
     padding: 35px 15px 15px 15px;
@@ -79,11 +74,6 @@
     flex-direction: column;
     gap: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-}
-
-.block-2-container.drag-over {
-    background-color: #f1f5f9;
-    border-color: #3b82f6;
 }
 
 /* Правая колонка */
@@ -162,13 +152,6 @@
     word-break: break-word;
 }
 
-.block-1-empty {
-    color: #9ca3af;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: normal;
-}
-
 /* Прямоугольные элементы со словами */
 .word-card {
     display: inline-flex;
@@ -213,28 +196,6 @@
 .block-3-container .word-card:hover {
     box-shadow: 0 0 0 2px #0000ff;
     transform: scale(1.03);
-}
-
-/* При перетаскивании */
-.word-card.dragging {
-    opacity: 0.5;
-    transform: scale(0.95);
-}
-
-/* Подсказки и инструкция */
-.info-box {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333333;
-    line-height: 1.5;
-    background-color: #f8fafc;
-    border-left: 4px solid #768093;
-    padding: 10px 14px;
-    border-radius: 0 4px 4px 0;
-}
-
-.info-box strong {
-    color: #000000;
 }
 
 /* Элементы слов в блоке 1 */

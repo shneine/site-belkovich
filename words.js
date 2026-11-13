@@ -70,7 +70,7 @@ function parse() {
 
     console.log('Ассоциативный массив:', assoc);
 
-    block2.innerHTML = '<span class="block-badge badge-gray">2</span>';
+    block2.innerHTML = '<span class="block-badge badge-green">2</span>';
     block3.innerHTML = '<span class="block-badge badge-blue">3</span>';
     block1.innerHTML = '<span class="block-badge badge-red">1</span>';
 
